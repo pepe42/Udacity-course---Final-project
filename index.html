@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pixel Art Maker!</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Merriweather" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/avatar.png"/>
+    <!--[if lt IE9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <header class="group">
+        <div class="header-one">
+            <div class="contact">
+                <i class="fa fa-envelope-square" aria-hidden="true"></i>
+                <a href="mailto:pepe@designx.click" title="mailto:pepe@designx.click" class="details">pepe@designX.click</a>
+            </div>
+            <div class="contact social">
+                <ul>
+                    <li><a href="https://github.com/pepe42" title="Link to GitHub" target="_blank" class="social-icon"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://twitter.com/designXclick" title="Link to Twitter" target="_blank" class="social-icon"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/designX.click/" title="Link to Facebook" target="_blank" class="social-icon"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/pe-pe-3232147b/" title="Link to LinkedIn" target="_blank" class="social-icon"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <i class="fa fa-phone-square" aria-hidden="true"></i>
+                <a href="tel:+421917223145" title="Phone number" class="details">+421 917 223 145</a>
+            </div>
+        </div>
+        <div class="header-one-responsive">
+            <p id="menu" title="Click/Unclick to Show/Hide the contact menu"># Contacts #</p>
+            <div class="contact-respo">
+                <i class="fa fa-envelope-square" aria-hidden="true"></i>
+                <a href="mailto:pepe@designx.click" title="mailto:pepe@designx.click" class="details">pepe@designX.click</a>
+            </div>
+            <div class="contact-respo">
+                <i class="fa fa-phone-square" aria-hidden="true"></i>
+                <a href="tel:+421917223145" title="Phone number" class="details">+421 917 223 145</a>
+            </div>
+            <div class="contact-respo social">
+                <ul>
+                    <li><a href="https://github.com/pepe42" title="Link to GitHub" target="_blank" class="social-icon"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://twitter.com/designXclick" title="Link to Twitter" target="_blank" class="social-icon"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/designX.click/" title="Link to Facebook" target="_blank" class="social-icon"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/pe-pe-3232147b/" title="Link to LinkedIn" target="_blank" class="social-icon"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-two">
+            <a href="http://udacity.com" target="_blank"><img class="logo" src="img/Udacity_logo1.png" title="Udacity logo & link to Udacity website"></a>
+            <h1>Project: Pixel Art Maker</h1>
+        </div>
+    </header>
+
+    <main>
+        <aside>
+            <h2>Choose Grid Size</h2>
+                <form id="sizePicker">
+                    <div class="grid_input">
+                        Grid Height:
+                        <input type="number" id="input_height" name="height" min="1" max="13" value="10">
+                    </div>
+                    <div class="grid_input">
+                        Grid Width:
+                        <input type="number" id="input_width" name="width" min="1" max="30" value="10">
+                    </div>
+                    <input type="submit" title="Submit grid size">
+                </form>
+
+            <h2>Pick A Color</h2>
+            <input type="color" id="colorPicker" title="Pick a color">
+        </aside>
+        <aside class="second">
+            <h2>Design Canvas</h2>
+            <table id="pixel_canvas"></table>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; Copyright<a href="http://designx.click" title="Link to designX.click" target="_blank" class="details"> designX.click</a> 2018 | Udacity Final Project</p>
+    </footer>
+
+<!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/jQueryRotate.js"></script>
+    <script src="js/design.js"></script>
+</body>
+</html>
