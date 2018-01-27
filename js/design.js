@@ -1,4 +1,4 @@
-
+//Re-design
 $(document).ready(function () {
   	setTitle();
   	setSocialIcons();
@@ -66,14 +66,14 @@ function setGrid()
 	$('#sizePicker').submit(function makeGrid(grid) {
 		//remove all tables
     	$('table tr').remove();
-	    
+
 	    var row_input = $('#sizePicker #input_height').val();
 	    var col_input = $('#input_width').val();
-	    
-	    for (var i = 1; i <= row_input; i++) 
+
+	    for (var i = 1; i <= row_input; i++)
 	    {
 			createRow();
-	      	for (var j = 1; j <= col_input; j++) 
+	      	for (var j = 1; j <= col_input; j++)
 	      	{
 	      		createCell();
 	      	}
