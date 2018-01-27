@@ -1,4 +1,4 @@
-//Re-design
+//Re-design 2
 $(document).ready(function () {
   	setTitle();
   	setSocialIcons();
