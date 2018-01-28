@@ -1,0 +1,50 @@
+// CLEARFIX
+.container:before, .group:before,
+.container:before, .group:after {
+    content: " "; display: table;
+}
+.container:after, .group:after {
+    clear: both;
+}
+
+//VARIABLES
+$color-text: #000000;
+$color-background: yellow;
+$text-size: 100%;
+/* $h3-color: #000000;
+$h4-color: #e90074; */
+
+
+// GENERAL
+html { box-sizing: border-box; }
+ *, *:before, *:after {
+    box-sizing: inherit; }
+
+body {
+    width: 100%;
+    color: $color-text;
+    background: #76f704;
+
+    font: {
+        size: $text-size;
+        family: 'Merriweather', 'Josefin Slab', Verdana, serif;
+        weight: bold;
+    }
+        -webkit-font-smoothing: antialiased;
+    font-family: 'Josefin Slab', Verdana, serif;
+}
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 1.25em; /* 20/16 */
+}
+
+p {
+    color: $color-text;
+}
+
+img {
+    height: auto;
+    vertical-align: middle;
+    max-width: 100%;
+}

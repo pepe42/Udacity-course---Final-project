@@ -1,0 +1,111 @@
+// RESPONSIVE BAR MENU
+.header-one-responsive {
+	display: none;
+}
+
+@media screen and (max-width: 977px) {
+	.header-one {
+		display: none;
+	}
+	.header-one-responsive {
+    	display: inline-block;
+    	width: 100%;
+    	text-align: center;
+    	background: #54a908;
+
+    //	visibility: visible;
+    //	height: 1;
+	}
+	#menu {
+		width: 100%;
+		font-size: 150%;
+		margin: 0 auto;
+		padding-top: 0.5em;
+    	height: 2em;
+    	box-shadow: 0px 5px 10px;
+
+	  	&:focus, &:hover {
+	  		cursor: pointer;
+	  		color: #ffffff;
+	  	}
+	}
+	#menu p {
+
+	}
+	.contact-respo {
+		width: 100%;
+		margin: 1em;
+	}
+	.social ul {
+		padding: 0;
+		margin: -1em auto 0.5em;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	input[type=submit] {
+	    margin-top: 1em;
+	}
+}
+
+@media screen and (max-width: 841px) {
+	h1 {
+		font-size: 3.5em;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	h1 {
+		font-size: 3em;
+		margin-top: 1em;
+	}
+	.logo {
+		margin-top: -1em;
+	}
+	aside {
+	    width: 95%;
+	    margin: 0 2.5%;
+	    text-align: center;
+	    padding: 1em;
+	    height: 20em;
+	}
+	.second {
+	    margin-top: 5em;
+	}
+
+	footer {
+		float: left;
+	    margin-top: 2em;
+	}
+}
+
+@media screen and (max-width: 630px) {
+	.logo {
+		float: none;
+		margin-top: 1.5em;
+		margin-left: 42%;
+	}
+	h1 {
+		margin-top: 0.5em;
+		margin-bottom: 1.5em;
+	}
+	main {
+		float: none;
+	    margin-top: 5em;
+	}
+
+}
+@media screen and (max-width: 585px) {
+	footer p {
+	    font-size: 100%;
+	}
+}
+
+@media screen and (max-width: 525px) {
+	h1 {
+		font-size: 2em;
+	}
+	main {
+	    margin-top: 3em;
+	}
+}
