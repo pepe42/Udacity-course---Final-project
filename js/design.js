@@ -1,21 +1,22 @@
-//Re-design 2
+//Udacity Final Project
 $(document).ready(function () {
-  	setTitle();
+  	setIntro();
   	setSocialIcons();
   	setMenu();
   	setLogo();
   	setGrid();
 });
 
-function setTitle()
-{
-	// H1 TITLE INTRO
+// INTRO PAGE ANIMATION
+function setIntro() {
+
 	$('h1').hide().fadeIn(3000);
+	$('h2').addClass('animated shake');
 }
 
-function setSocialIcons()
-{
-	//SOCIAL-ICONS ANIMATION
+// SOCIAL-ICONS ANIMATION
+function setSocialIcons() {
+
 	var icons = $('.social-icon'),
 		styles = {
 			position: 'relative',
@@ -32,10 +33,9 @@ function setSocialIcons()
 	})
 }
 
+// RESPONSIVE MENU ON CLICK
+function setMenu() {
 
-function setMenu()
-{
-	// RESPONSIVE MENU
 	$('.contact-respo').hide();
 
 	$('#menu').on('click', function() {
@@ -43,10 +43,9 @@ function setMenu()
 		});
 }
 
+// UDACITY LOGO ROTATION
+function setLogo() {
 
-function setLogo()
-{
-	// Udacity logo IMAGE ROTATION
 	$(".logo").rotate({
 	  bind:
 	  {
@@ -60,49 +59,41 @@ function setLogo()
 	});
 }
 
+// GRID SETTING
+function setGrid() {
 
-function setGrid()
-{
 	$('#sizePicker').submit(function makeGrid(grid) {
-		//remove all tables
-    	$('table tr').remove();
 
-	    var row_input = $('#sizePicker #input_height').val();
-	    var col_input = $('#input_width').val();
+    	$('table tr').remove(); //remove all tables
 
-	    for (var i = 1; i <= row_input; i++)
-	    {
+	    var theRow = $('#sizePicker #input_height').val(); // defining variables
+	    var theCol = $('#input_width').val();
+
+	    for (var i = 1; i <= theRow; i++) {
 			createRow();
-	      	for (var j = 1; j <= col_input; j++)
-	      	{
+	      	for (var j = 1; j <= theCol; j++) {
 	      		createCell();
 	      	}
 	    }
 
 	    grid.preventDefault();
-
 	});
 }
 
-function createRow()
-{
+// ROW CREATING
+function createRow() {
+
 	$('table').append("<tr></tr>");
 }
-function createCell()
-{
-	// append cells to last row
-    $('table tr:last').append("<td></td>");
-    // format cell
-    $('td').attr("class", 'cells');
-    // add click
-    $('td').click(function (event) {
+
+// CELLS CREATING
+function createCell() {
+
+    $('table tr:last').append("<td></td>"); // append cells to last row
+    $('td').attr("class", 'cells'); // format cell
+    $('td').click(function (event) {     // add click
 		var paint = $('#colorPicker').val();
 	  	$(event.target).css('background-color', paint);
 	});
 }
-
-
-
-
-
 

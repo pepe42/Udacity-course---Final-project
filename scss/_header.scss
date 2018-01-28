@@ -8,7 +8,7 @@ header {
     height: 3.5em;
     background: #54a908;
     width: 100%;
-    box-shadow: 0px 5px 10px;
+    box-shadow: 0em 0.3125em 0.625em; /* 0/16 */ /* 5/16 */ /* 10/16 */
 }
 .contact {
     float: left;
@@ -58,7 +58,7 @@ header {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font: normal 24px FontAwesome;
+    font: normal 1.5em FontAwesome; /* 24/16 */
 }
 .header-two {
    max-width: 1150px;
@@ -69,9 +69,10 @@ header {
     margin: -0.5em 0 0 5%;
     width: 5em;
 }
+
 h1 {
     font-family: Josefin Slab;
-    font-size: 70px;
+    font-size: 4.375em; /* 70/16 */
     text-align: center;
     text-shadow: 0px 5px 10px;
 }

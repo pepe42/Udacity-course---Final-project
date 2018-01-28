@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pixel Art Maker!</title>
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/spectrum.css" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="shortcut icon" type="image/png" href="img/avatar.png"/>
     <!--[if lt IE9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -18,11 +21,11 @@
 <body>
     <header class="group">
         <div class="header-one">
-            <div class="contact">
+            <div class="contact animated bounceInDown">
                 <i class="fa fa-envelope-square" aria-hidden="true"></i>
                 <a href="mailto:pepe@designx.click" title="mailto:pepe@designx.click" class="details">pepe@designX.click</a>
             </div>
-            <div class="contact social">
+            <div class="contact social animated slideInLeft">
                 <ul>
                     <li><a href="https://github.com/pepe42" title="Link to GitHub" target="_blank" class="social-icon"><i class="fa fa-github"></i></a></li>
                     <li><a href="https://twitter.com/designXclick" title="Link to Twitter" target="_blank" class="social-icon"><i class="fa fa-twitter"></i></a></li>
@@ -30,13 +33,13 @@
                     <li><a href="https://www.linkedin.com/in/pe-pe-3232147b/" title="Link to LinkedIn" target="_blank" class="social-icon"><i class="fa fa-linkedin"></i></a></li>
                 </ul>
             </div>
-            <div class="contact">
+            <div class="contact animated bounceInDown">
                 <i class="fa fa-phone-square" aria-hidden="true"></i>
                 <a href="tel:+421917223145" title="Phone number" class="details">+421 917 223 145</a>
             </div>
         </div>
         <div class="header-one-responsive">
-            <p id="menu" title="Click/Unclick to Show/Hide the contact menu"># Contacts #</p>
+            <p id="menu"  title="Click/Unclick to Show/Hide the contact menu"># Contacts #</p>
             <div class="contact-respo">
                 <i class="fa fa-envelope-square" aria-hidden="true"></i>
                 <a href="mailto:pepe@designx.click" title="mailto:pepe@designx.click" class="details">pepe@designX.click</a>
@@ -55,7 +58,7 @@
             </div>
         </div>
         <div class="header-two">
-            <a href="http://udacity.com" target="_blank"><img class="logo" src="img/Udacity_logo1.png" title="Udacity logo & link to Udacity website"></a>
+            <a href="http://udacity.com" target="_blank"><img class="logo" src="img/Udacity_logo1.png" title="Udacity logo & link to Udacity website" alt="Udacity logo & link to Udacity website"></a>
             <h1>Project: Pixel Art Maker</h1>
         </div>
     </header>
@@ -90,6 +93,7 @@
 
 <!-- SCRIPTS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/spectrum.js"></script>
     <script src="js/jQueryRotate.js"></script>
     <script src="js/design.js"></script>
 </body>
